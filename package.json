@@ -15,7 +15,8 @@
     "@supabase/supabase-js": "^2.44.4",
     "@vercel/blob": "^0.23.4",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "twilio": "^5.2.2"
   },
   "scripts": {
     "build": "tsc",
