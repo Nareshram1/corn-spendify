@@ -1,15 +1,25 @@
 {
   "name": "corn",
   "version": "1.0.0",
-  "description": "A backup corn job for spendify",
-  "main": "backup.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "dist/backup_corn.ts",
+  "repository": "https://github.com/Nareshram1/corn-spendify.git",
+  "author": "Nareshram1 <nireshram805s1@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.44.4",
-    "dotenv": "^16.4.5"
+    "@vercel/blob": "^0.23.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/backup_corn.ts",
+    "dev": "ts-node src/backup_corn.ts"
   }
 }
