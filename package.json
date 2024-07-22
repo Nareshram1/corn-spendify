@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/backup_corn.js",
+    "start": "node public/backup_corn.js",
     "dev": "ts-node src/backup_corn.ts"
   }
 }
