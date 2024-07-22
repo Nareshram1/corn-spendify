@@ -33,7 +33,14 @@ async function main(): Promise<void> {
     await backupTable(table);
   }
 }
-
+app.get('/', async (req: Request, res: Response) => {
+  try {
+    res.status(200).send('Server is Alive.');
+  } catch (error) {
+    console.error('Issues in server:', error);
+    res.status(500).send('Issues in server.');
+  }
+});
 app.get('/backup', async (req: Request, res: Response) => {
   try {
     await main();
