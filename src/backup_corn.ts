@@ -78,7 +78,7 @@ app.get('/', async (req: Request, res: Response) => {
 app.get('/backup', async (req: Request, res: Response) => {
   try {
     await main();
-    res.status(200).send('Backup process completed.');
+    res.status(200).send('Done.');
   } catch (error) {
     console.error('Error during backup:', error);
     await sendSms('Backup process encountered an error.');
